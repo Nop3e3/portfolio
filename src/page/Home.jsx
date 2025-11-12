@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import Folders from "../Homepage sections/Folders.jsx";
 import Title from "../common/TitleandCaption";
 import MainButton from "../common/MainButton";
 import Sbutton from "../common/ButtonSecondary";
@@ -17,10 +18,15 @@ export default function Home() {
        caption="A peek into the projects that shaped how I design, think, and play." />
       <Work />
       <div className="buttons">
-      <MainButton label="View All Projects" />
-      <Sbutton label="Get in Touch" />
+      <MainButton label="View All" />
+      <Sbutton label="Collab 🡥" />
+      
 
       </div>
+      <Title title="The Way I Work " 
+       caption="(and Have Fun Doing It)" />
+      <Folders />
     </div>
+
   );
 }

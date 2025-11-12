@@ -1,0 +1,48 @@
+.card-categoryy{
+    color: #1E1E1E;
+display: flex;
+height: 50px;
+padding: 2px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+border-radius: 37px;
+border: 2px solid #1E1E1E;
+font-family: "JetBrains Mono";
+font-size: clamp(0.7rem, 3vw, 1.3rem); 
+font-style: normal;
+font-weight: 400;
+
+line-height: normal;
+}
+.card-titlee{
+ color: #1E1E1E;
+margin: 0;
+width: 50%;
+padding: 0;
+font-family: GayaTrial;
+font-size: 64px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;   
+}
+.card-captionn{
+    color: #1E1E1E;
+font-family: "JetBrains Mono";
+ font-size: clamp(0.7rem, 3vw, 1.3rem); 
+font-style: normal;
+margin: 0;
+padding: 0;
+width: 50%;
+font-weight: 400;
+line-height: normal;
+}
+.cardd{
+    display: flex;
+width: 100%;
+gap: 31px;
+flex-direction: column;
+align-items: flex-start;
+
+}

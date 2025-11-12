@@ -1,0 +1,126 @@
+.folder{
+    display: flex;
+
+flex-direction: column;
+
+
+}
+.yellow{
+    background-image: url("../Assets/folder1.svg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+display: flex;
+justify-self: center ;
+
+      aspect-ratio: 1229.586 / 811;
+   width: 96%;
+
+}
+.content{
+    width: 98%;
+       display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 31px;
+align-items: flex-start;
+padding-left: 2%;
+    
+}
+.Name{
+color: #1E1E1E;
+font-family: "JetBrains Mono";
+font-size: 40px;
+font-style: normal;
+  display: flex;
+justify-content: flex-start;
+    text-align: center;
+padding-bottom: 200px;
+padding-top: 30px;
+font-weight: 700;
+line-height: normal;   
+}
+.one{
+  padding-left: 2%;
+
+}
+.pink{
+    background-image: url("../Assets/folder2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+display: flex;
+justify-self: center ;
+
+      aspect-ratio: 1229.586 / 811;
+   width: 96%;
+
+}
+.two{
+  padding-left: 33%;
+
+}
+.Blue{
+    background-image: url("../Assets/folder3.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: left;
+display: flex;
+justify-self: center ;
+
+      aspect-ratio: 1231.074/ 811;
+   width: 96%;
+}
+.three{
+  padding-left: 60%;
+
+}
+.four{
+  padding-left: 85%;
+
+
+}
+.green{
+        background-image: url("../Assets/folder4.svg");
+    background-repeat: no-repeat;
+    background-size:cover;
+        background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+display: flex;
+justify-self: center ;
+
+      aspect-ratio: 1229.586 / 811;
+   width: 96%;
+}
+.folders-section {
+height: 811px;
+overflow-y: scroll;
+  position: relative;
+  width: 100%;
+}
+.folders-section {
+  height: 901px; /* keep height limit */
+  overflow-y: scroll; /* section scrolls internally */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.folders-section::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Keep all your folder styles as-is */
+.folder {
+  display: flex;
+  flex-direction: column;
+  /* NEW: sticky for overlapping accordion */
+  position: sticky;
+  top: 100px;
+  margin-bottom: 0px; /* overlap previous card */
+  transition: transform 0.2s ease-out;
+}
+
+.three{
+    margin-bottom: -100px;
+}
