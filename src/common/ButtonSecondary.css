@@ -1,0 +1,20 @@
+.ButtonSecondary{
+    display: flex;
+
+padding: 10px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #8A1E3E;
+
+text-align: right;
+
+font-family: "JetBrains Mono";
+font-size: clamp(1rem, 5vw, 1.2rem);
+font-style: italic;
+font-weight: 400;
+line-height: 110.606%; /* 26.546px */
+background: #FEFAF9;
+border-radius: 69px;
+border: 2px solid #8A1E3E;
+}

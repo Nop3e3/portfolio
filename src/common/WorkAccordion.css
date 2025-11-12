@@ -1,0 +1,101 @@
+/* =============================
+   CARD CONTAINER
+============================= */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 465.165px;
+  height: 492.795px;
+  min-width: 300px;
+  border: 2px solid #1E1E1E;
+  background-color: #FEFAF9;
+  background-image: url(../Assets/image-from-rawpixel-id-12504330-png.png);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect: subtle rise + shadow */
+.card:hover {
+  transform: translateY(-24px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =============================
+   CARD IMAGE
+============================= */
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* =============================
+   CONTENT CONTAINER
+============================= */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 2px solid #1E1E1E;
+  gap: 16px;
+  font-family: "JetBrains Mono";
+  text-align: center;
+}
+
+/* =============================
+   CARD TITLE
+============================= */
+.card-title {
+  margin: 0;
+  padding: 0;
+  color: #1E1E1E;
+  font-family: "JetBrains Mono";
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+
+/* =============================
+   CARD CAPTION
+============================= */
+.card-caption {
+  width: 425.165px;
+  margin: 0;
+  padding: 0;
+  color: #1E1E1E;
+  font-family: "JetBrains Mono";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: 1.137px;
+  text-align: center;
+}
+
+/* =============================
+   CARD CATEGORY TAG
+============================= */
+.card-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.898px;
+  padding: 4px 8px;
+  color: #8A1E3E;
+  border: 2px solid #8A1E3E;
+  border-radius: 6.318px;
+  font-family: "JetBrains Mono";
+  font-size: 15.795px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.422px;
+}

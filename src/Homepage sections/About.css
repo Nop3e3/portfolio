@@ -1,0 +1,200 @@
+.Salma{
+    height: 85px;
+flex: 1 0 0;
+
+color: #8A1E3E;
+
+font-family: GayaTrial;
+font-size: clamp(5rem, 4vw, 6rem);
+font-style: italic;
+font-weight: 400;
+line-height: 101%; /* 96.96px */
+}
+.SoWhois{
+    color: #1E1E1E;
+
+font-family: GayaTrial;
+font-size: clamp(2rem, 5vw, 3rem);
+font-style: normal;
+font-weight: 400;
+line-height: 101%; /* 48.48px */
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ 
+    gap: 8px;
+
+}
+.Salma{
+    margin-bottom: -8px;
+}
+.description{
+    color: #1E1E1E;
+
+font-family: "JetBrains Mono";
+font-size: clamp(1rem, 5vw, 1.2rem);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.psst{
+   color: #8A1E3E;
+
+
+font-family: "JetBrains Mono";
+font-size: clamp(1rem, 5vw, 2rem);
+font-style: normal;
+font-weight: 500;
+line-height: normal; 
+}
+.firsthalf{
+    width: 46%;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+border-right: 2px solid #1E1E1E;
+
+padding-bottom: 0px;
+align-self: stretch;
+    padding-left: 2%;
+    padding-right: 2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.tgthr{
+
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch
+
+}
+.bbme{
+    z-index: -1;
+    position: absolute;
+}
+.About{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+width: 100%;
+}
+.secondhalf{
+    width: 50%;
+height: 720px;
+overflow: hidden;
+}
+.bbme{
+    top:900px;
+margin-left: 10%;
+}
+.sstickers{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.widthh{
+object-fit: contain;
+}
+.minus{
+    margin-right: 100px;
+}
+/* Base styles */
+.stickers img {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+  transform-origin: center;
+}
+
+/* ===== DIFFERENT SHAKE ANIMATIONS ===== */
+
+/* A gentle wiggle */
+@keyframes shakeA {
+  0%, 100% { transform: rotate(0deg) translate(0, 0); }
+  15% { transform: rotate(4deg) translate(2px, -1px); }
+  30% { transform: rotate(-4deg) translate(-2px, 1px); }
+  45% { transform: rotate(2deg) translate(1px, -2px); }
+  60% { transform: rotate(-2deg) translate(-1px, 2px); }
+  100% { transform: rotate(0deg); }
+}
+
+/* A bouncier shake */
+@keyframes shakeB {
+  0%, 100% { transform: rotate(0deg) translate(0, 0); }
+  15% { transform: rotate(-4deg) translate(-2px, 1px); }
+  30% { transform: rotate(4deg) translate(2px, -1px); }
+  45% { transform: rotate(-2deg) translate(-1px, 2px); }
+  60% { transform: rotate(2deg) translate(1px, -2px); }
+  100% { transform: rotate(0deg); }
+}
+
+/* A tiny jittery shake */
+@keyframes shakeC {
+  0%, 100% { transform: rotate(0deg) translate(0, 0); }
+  15% { transform: rotate(-4deg) translate(-2px, 1px); }
+  30% { transform: rotate(4deg) translate(2px, -1px); }
+  45% { transform: rotate(-2deg) translate(-1px, 2px); }
+  60% { transform: rotate(2deg) translate(1px, -2px); }
+  100% { transform: rotate(0deg); }
+}
+
+/* A soft sway */
+@keyframes shakeD {
+  0%, 100% { transform: rotate(0deg) translate(0, 0); }
+  15% { transform: rotate(4deg) translate(2px, -1px); }
+  30% { transform: rotate(-4deg) translate(-2px, 1px); }
+  45% { transform: rotate(2deg) translate(1px, -2px); }
+  60% { transform: rotate(-2deg) translate(-1px, 2px); }
+  100% { transform: rotate(0deg); }
+}
+
+/* ===== ASSIGN EACH TO A DIFFERENT STICKER ===== */
+
+/* Only start animation when hovering over About section */
+.About:hover .sstickers:nth-child(1) img:nth-child(1) {
+  animation: shakeA 4s ease-in-out infinite;
+  animation-delay:  0.5s; /* first wait, then loop naturally */
+}
+
+.About:hover .sstickers:nth-child(1) img:nth-child(2) {
+  animation: shakeB 4s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.About:hover .sstickers:nth-child(2) img:nth-child(1) {
+  animation: shakeC 4s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.About:hover .sstickers:nth-child(2) img:nth-child(2) {
+  animation: shakeD 4s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+/* Make them pause between shakes */
+.About:hover .stickers img {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+/* Add pause between shakes by slowing overall timing */
+.About:hover .stickers img {
+  animation-play-state: running;
+  animation-delay: var(--delay, 10s);
+}
+
+.bbme {
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}

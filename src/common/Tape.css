@@ -1,0 +1,26 @@
+.tape-container {
+  overflow: hidden;
+  width: 100%;;
+  background: #8F9B49;
+padding-bottom: 20px;
+padding-top: 20px;
+overflow: hidden;
+  border-top: 2px solid #1E1E1E;
+  border-bottom: 2px solid #1E1E1E;;
+}
+
+.tape {
+  display: flex;
+  gap: 50px;
+  white-space: nowrap;
+}
+
+.tape-item {
+color: #1E1E1E;
+
+font-family: "JetBrains Mono";
+font-size: 22.96px;
+font-style: normal;
+font-weight: 400;
+line-height: 110.606%; /* 25.395px */
+}

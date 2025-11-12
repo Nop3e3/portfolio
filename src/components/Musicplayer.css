@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+/* container */
+.music-player {
+  display:inline-flex;
+  
+  position: fixed;
+  top: 25px;               /* vertical offset */
+  left: 50%;               /* horizontal center */
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+border-radius: 172px;
+background: rgba(0, 0, 0, 0.551);
+
+backdrop-filter: blur(2px);
+color: #D9C9B3;
+  font-family: 'JetBrains Mono', monospace;
+  padding:0px 10px ;
+  width:fit-content;
+ 
+
+  user-select: none;
+}
+
+/* shared button style */
+.play-btn,
+.control-btn {
+  background: none;
+  border: none;
+  color: #d6cbb6;
+  cursor: pointer;
+  margin: 0 6px;
+
+  transition: opacity 0.2s ease;
+}
+
+.play-btn:hover,
+.control-btn:hover {
+  opacity: 0.6;
+}
+
+/* skip button uses material icon */
+.skip-btn::before {
+  content: "\e044"; /* skip_next / play_arrow */
+  font-family: "Material Symbols Rounded";
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+
+}
+
+/* song text */
+.song-text {
+  margin-left: 10px;
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  letter-spacing: 0.5px;
+}
+.song-text {
+  position: relative;
+  width: 200px;
+  overflow: hidden;
+  font-size:  1rem;
+  white-space: nowrap;
+
+  /* Add a fading effect on both sides */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.scrolling-text {
+  display: inline-block;
+  padding-right: 100%;
+  animation: scroll-loop 12s linear infinite;
+}
+
+.scrolling-text::after {
+  content: attr(data-text);
+  padding-left: 50px; /* gap between repeats */
+}
+
+@keyframes scroll-loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
