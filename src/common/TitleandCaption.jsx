@@ -1,10 +1,11 @@
 import React from "react";
-import "./ButtonSecondary.css";
+import "./TitleandCaption.css";
 
-export default function Sbutton({ label }) {
+export default function Sbutton({ title, caption }) {
   return (
-    <button className="ButtonSecondary">
-      {label}
-    </button>
+    <div className="titlencaption-container">
+          <h3 className="section-title">{title}</h3>
+        <p className="section-caption">{caption}</p>
+    </div>
   );
 }

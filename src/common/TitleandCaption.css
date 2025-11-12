@@ -1,0 +1,39 @@
+.section-title{
+    color: #8A1E3E;
+padding: 0%;
+margin: 0%;
+font-family: GayaTrial;
+font-size: 48.994px;
+font-style: italic;
+font-weight: 400;
+line-height: 110.606%; /* 54.19px */
+}
+.section-caption{
+    color: #1E1E1E;
+font-family: "JetBrains Mono";
+font-size: 24px;
+padding: 0%;
+margin: 0%;
+font-style: normal;
+font-weight: 400;
+line-height: 110.606%;
+}
+.titlencaption-container{
+    display: flex;
+width: 98%;
+padding-left: 2%;
+display: flex;
+padding-top: 20px;
+padding-bottom: 20px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 10.207px;
+align-self: stretch;
+flex-direction: column;
+border-top: #1E1E1E 2px solid;
+border-bottom: #1E1E1E 2px solid;
+justify-content: center;
+align-items: flex-start;
+gap: 16px;
+}

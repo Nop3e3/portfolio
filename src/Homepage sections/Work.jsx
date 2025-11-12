@@ -88,6 +88,7 @@ export default function Work() {
 
   return (
     <section className="Work" ref={sectionRef}>
+       
       <div className="cards">
         {works.map((work, i) => (
           <div

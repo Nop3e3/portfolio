@@ -41,3 +41,11 @@ width: 100%;
   cursor: pointer;
 }
 
+.buttons{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+width: 98%;
+padding-left: 2%;
+gap: 20px;
+}

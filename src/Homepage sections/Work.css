@@ -1,20 +1,25 @@
 .Work {
-  height: 500px;
-  width: 95%;
-padding-left: 5%;
+height: 550px;
+  width: 100%;
 
+
+
+flex-direction: column;
   display: flex;
-padding-top: 100PX;
-  justify-content: flex-start;
-  align-items: flex-start;
+padding-bottom: 50px;
+  justify-content: flex-end;
+  align-items: flex-end;
 overflow-x: hidden;
-background-color: aliceblue;
+
 }
 
 .cards {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+    width: 95%;
+      height: 500px;
+padding-left: 5%;
   gap: 120px; /* initial spacing */
 }
 
