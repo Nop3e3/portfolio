@@ -8,6 +8,7 @@ import Tape from "../common/Tape.jsx";
 import Header from "../Homepage sections/Header.jsx";
 import About from "../Homepage sections/About.jsx";
 import Work from "../Homepage sections/Work.jsx";
+import Pinboard from "../Homepage sections/Pinboard.jsx";
 export default function Home() {
   return (
     <div className="homeee">
@@ -26,6 +27,18 @@ export default function Home() {
       <Title title="The Way I Work " 
        caption="(and Have Fun Doing It)" />
       <Folders />
+
+      <div className="dottedinteractionthingie">
+            <div className="titleee">
+            <div className="ttl">What Do I Even Do ?</div> 
+            <div className="captiont">Basically, I Design Things That Make Sense (and Look Good) .From UX flows to UI visuals, I build digital experiences that connect with people and help products shine.</div> 
+                 <div className="buttons">
+      <MainButton label="View All" />
+      <Sbutton label="Collab 🡥" />
+      
+
+      </div></div> 
+      <Pinboard /></div>
     </div>
 
   );

@@ -77,7 +77,7 @@ justify-self: center ;
 }
 .four{
   padding-left: 85%;
-
+  
 
 }
 .green{
@@ -94,20 +94,9 @@ justify-self: center ;
    width: 96%;
 }
 .folders-section {
-height: 811px;
-overflow-y: scroll;
+
   position: relative;
   width: 100%;
-}
-.folders-section {
-  height: 901px; /* keep height limit */
-  overflow-y: scroll; /* section scrolls internally */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
-
-.folders-section::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
 }
 
 /* Keep all your folder styles as-is */
@@ -117,10 +106,18 @@ overflow-y: scroll;
   /* NEW: sticky for overlapping accordion */
   position: sticky;
   top: 100px;
-  margin-bottom: 0px; /* overlap previous card */
+  margin-bottom:0px; /* overlap previous card */
   transition: transform 0.2s ease-out;
 }
 
-.three{
-    margin-bottom: -100px;
+
+.folders-section {
+  height: 1011px; /* keep height limit */
+  overflow-y: scroll; /* section scrolls internally */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.folders-section::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

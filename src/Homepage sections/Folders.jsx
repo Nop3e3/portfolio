@@ -2,6 +2,7 @@ import React from "react";
 import Foldercontent from "../common/Foldercontent";
 import MainButton from "../common/MainButton";
 import "./Folders.css";
+
 export default function Folders() {
     
   return (
