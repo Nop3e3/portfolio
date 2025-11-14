@@ -1,0 +1,96 @@
+
+.up{
+    background-image: url("../Assets/Frame 1000007540.png");
+    background-repeat: no-repeat;
+    display: flex;
+    height: 400px;
+    padding-top: 300px;
+
+    flex-direction: row;
+    background-size: cover;
+    align-items: center;
+    background-position: top;
+    justify-content: center;
+}
+
+.form-section {
+  width: 90%;
+  max-width: 500px;
+  background-color: #d7bcbc;
+  padding: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 0;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #2e2e2e;
+  outline: none;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  border: 1.5px solid #000;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-style: italic;
+  transition: all 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #000;
+  color: #d7bcbc;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 653.924px;
+color: #F2F0E4;
+background-image: url("../Assets/bgdoodle.svg");
+background-size: contain;
+background-position: right;
+font-family: GayaTrial;
+background-repeat: no-repeat;
+font-size: 77.887px;
+font-style: normal;
+font-weight: 400;
+line-height: 110.606%; /* 86.148px */
+}
+.down{
+    display: flex;
+width:100%;
+height: 72.593px;
+
+justify-content: center;
+align-items: center;
+color: #F2F0E4;
+gap: 8%;
+
+font-family: "JetBrains Mono";
+font-size: 14.815px;
+font-style: normal;
+font-weight: 400;
+line-height: 132.383%; /* 19.612px */
+background: #8F9B49;
+}

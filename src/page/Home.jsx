@@ -8,6 +8,7 @@ import Tape from "../common/Tape.jsx";
 import Header from "../Homepage sections/Header.jsx";
 import About from "../Homepage sections/About.jsx";
 import Work from "../Homepage sections/Work.jsx";
+import Footer from "../components/Footer.jsx";
 import Pinboard from "../Homepage sections/Pinboard.jsx";
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
 
       </div></div> 
       <Pinboard /></div>
+          <Footer />
     </div>
 
   );

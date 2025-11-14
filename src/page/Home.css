@@ -54,6 +54,7 @@ margin-bottom: 50px;
   display: flex;
   margin-top: 50px;
  border-top: #1E1E1E 2px solid;
+ border-bottom: #1E1E1E 2px solid;
   flex-direction: row;
 }
 .ttl{
