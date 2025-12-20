@@ -48,8 +48,8 @@ const Work = ({ portfolio }) => {
           />
         ))}
       </div>
-{/* 
-      <Pagination /> */}
+
+      <Pagination />
       <Footer />
     </div>
   );
