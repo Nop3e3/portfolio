@@ -31,6 +31,8 @@ const Work = ({ portfolio }) => {
       <div className="sticky">
         <Tape />
       </div>
+     
+<Navbar/>
 
       <Title />
       <Filters />
