@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* --- Form Container & Global Styles --- */
+.contact-formm {
+  width: 700px;
+    margin: 40px auto;
+
+    color: #f1f1f1;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 0 10px; /* Optional: small horizontal padding */
+}
+
+.form-group {
+    padding-bottom: 5px; /* Space below the input for the border */
+}
+
+/* --- Input Field Styling --- */
+.form-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #777; /* The key bottom line border */
+    padding: 20px 0; /* Vertical padding to give space like the image */
+    
+    background-color: transparent;
+    color: transparent; /* Text color is transparent until filled */
+    
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    
+    /* Remove default focus outline */
+    outline: none;
+    
+    /* Ensure box-sizing includes padding */
+    box-sizing: border-box;
+    
+    transition: border-color 0.3s;
+}
+
+/* --- Placeholder Text Styling (The visible text) --- */
+/* This targets the actual placeholder text */
+.form-input::placeholder {
+    color: #1e1e1e; /* Placeholder is the visible text color */
+    opacity: 0.6; /* Slightly lighter appearance */
+    transition: opacity 0.3s;
+}
+
+/* On focus, make the border brighter and the placeholder invisible */
+.form-input:focus {
+    border-bottom-color: #1e1e1e;
+    color: #1e1e1e; /* Make the entered text visible */
+}
+
+.form-input:focus::placeholder {
+    opacity: 0; /* Hide the placeholder when focused */
+}
+
+/* --- Textarea specific styles (Your message) --- */
+.form-textarea {
+    resize: vertical; /* Allow vertical resizing, but not horizontal */
+    overflow: hidden; 
+}
+
+/* --- Submit Button Styling ("Let's Get In Touch") --- */
+.submit-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* Layout and Font */
+    border: none;
+    border-bottom: 1px solid #777; /* Match the input border */
+    background-color: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1e1e1e;
+    text-align: left;
+    
+    /* Spacing */
+    padding: 20px 0;
+    margin-top: 5px; /* Space it slightly from the last input */
+    
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+
+
+/* Styling for the Arrow symbol */
+.submit-arrow {
+    font-size: 1.5em; /* Slightly larger arrow */
+    line-height: 1;
+    font-weight: 700; /* Bolder arrow */
+}

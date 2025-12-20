@@ -1,0 +1,61 @@
+/* --- Base Styles --- */
+.controls-container {
+    display: flex;
+    gap: 20px; /* Space between the filter and sort controls */
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px; /* Adjust size as needed */
+  color: #1E1E1E;
+  justify-content: flex-end;
+    padding: 10px; /* Optional: adds a bit of padding around the controls */
+}
+
+/* --- Individual Control Groups (Filter & Sort) --- */
+.filter-control, .sort-control {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between label and button */
+}
+
+/* --- Label Text (FILTER : and SORT BY :) --- */
+.label {
+    font-weight: 400; /* Regular weight for the label */
+    letter-spacing: 0.05em; /* Small amount of spacing for the monospace font */
+}
+
+/* --- Dropdown Button Styling --- */
+.dropdown-button {
+    /* Appearance */
+    background-color: transparent;
+    border: 1px solid #1E1E1E; /* Light border color */
+    border-radius: 25px; /* Highly rounded corners */
+    padding: 8px 16px; /* Padding inside the button */
+    
+    /* Font and Text */
+    font-family: inherit; /* Use JetBrains Mono */
+    font-size: inherit; /* Use the size set in the container */
+    color: inherit; /* Use the light text color */
+    font-weight: 700; /* Bolder weight for the selected option */
+    cursor: pointer;
+    
+    /* Layout */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between text and arrow */
+    
+    /* Removes default button styling in some browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* --- Arrow Styling --- */
+.arrow {
+    font-weight: 400; /* Use a lighter weight for the arrow */
+    margin-left: 2px;
+}
+
+/* Optional: Hover effect for interactivity */
+.dropdown-button:hover {
+
+border: 2px solid #1E1E1E;
+}

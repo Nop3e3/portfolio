@@ -1,0 +1,68 @@
+/* --- Global Reset & Container Styles --- */
+.pagination-container {
+    display: flex;
+    justify-content: center; /* Center the pagination component */
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.pagination-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5px; /* Space between each item */
+}
+
+/* --- List Item Styles --- */
+.page-item {
+    display: inline-block;
+}
+
+/* --- Link/Button Styles --- */
+.page-link {
+    display: block;
+    min-width: 36px; /* Ensure a minimum clickable area */
+    height: 36px;
+    line-height: 36px; /* Center text vertically */
+    text-align: center;
+    text-decoration: none;
+    color: #1e1e1e;
+
+    border: 1px solid #1e1e1e;
+    border-radius: 50px; /* Slightly rounded corners */
+    transition: all 0.2s ease-in-out;
+}
+
+/* --- Hover/Focus Styles --- */
+.page-link:hover,
+.page-link:focus {
+    background-color: #f1f1f1;
+    border-color: #aaa;
+}
+
+/* --- Active Page Styles (Current Page) --- */
+.page-item.active .page-link {
+    color: #fff;
+    background-color: #8A1E3E;/* Primary blue color */
+    border-color: #8A1E3E;
+    pointer-events: none; /* Prevents interaction with the current page link */
+}
+
+/* --- Disabled State Styles (e.g., on the first or last page) --- */
+.page-item.disabled .page-link {
+    color: #1e1e1ea2;
+
+    cursor: not-allowed;
+    pointer-events: none; /* Prevents interaction */
+}
+
+/* --- Ellipsis Styles --- */
+.page-item.ellipsis span {
+    display: block;
+    min-width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #1e1e1e;
+}

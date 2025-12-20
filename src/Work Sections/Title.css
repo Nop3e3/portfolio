@@ -1,0 +1,15 @@
+  .title{
+    color: #1E1E1E;
+
+text-align: center;
+font-family: GayaTrial;
+font-size: 192.274px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .content{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+  }

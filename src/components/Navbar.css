@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+
   padding: 1.5rem 0;
   background: transparent;
   position: relative;
@@ -12,12 +13,13 @@
 /* Logo */
 .logo {
   width: auto;
+margin-left: 20px;
   object-fit: cover;
 }
 
 /* Fixed Menu container */
 .menucon {
-  position: fixed;
+  position: sticky;
   top: 25px;
   right: 40px;
   min-width: 100px;
@@ -66,4 +68,50 @@
   transform-origin: center center;  /* important */
   display: block;                   /* ensures rotation works */
   transition: transform 0.05s linear;
+}
+/* Full-screen overlay menu */
+.nav-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 999;
+}
+
+.nav-menu-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+}
+
+.nav-menu-content a {
+  font-family: "JetBrains Mono";
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.nav-menu-content a:hover {
+  opacity: 0.5;
+  transform: translateY(-4px);
+}
+
+/* Menu icon clickable area */
+.menucon {
+  cursor: pointer;
 }

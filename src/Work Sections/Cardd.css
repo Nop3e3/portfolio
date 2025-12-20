@@ -1,0 +1,120 @@
+.imgg{
+padding: 1rem;
+
+}
+.carddd {
+border: 2px solid rgba(30, 30, 30, 0.62);
+width: 411px;
+background: #FEFBE8;
+  text-align: center;
+height: 719.32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+
+}
+
+.carddd img {
+  width: 100%;
+  height: 90%;
+align-self: stretch;
+border-radius: 8px;
+border: 2px solid #1E1E1E;
+
+
+}
+
+.tag {
+  font-size: 0.8rem;
+ color: #8A1E3E;
+display: flex;
+padding: 3.159px 6.318px;
+justify-content: center;
+align-items: center;
+gap: 7.898px;
+
+border-radius: 6.318px;
+border: 1.58px solid #8A1E3E;
+font-family: "JetBrains Mono";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.8px;
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+  align-self: center;
+}
+
+.carddd h3 {
+color: #8A1E3E;
+width: 100%;
+text-align: center;
+font-variant-numeric: oldstyle-nums proportional-nums;
+font-family: GayaTrial;
+font-size: 40px;
+display: flex;
+padding: 20px 0;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+
+border-top: 2px solid #000;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0px;
+padding: 0px;
+padding-top: 16px;
+}
+
+.carddd p {
+color: #1E1E1E;
+width: 100%;
+text-align: center;
+font-variant-numeric: oldstyle-nums proportional-nums;
+font-family: "JetBrains Mono";
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+padding: 0px;
+margin: 0px;
+letter-spacing: 1.44px;
+}
+
+.carddd button {
+display: flex;
+
+padding: 8px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+color: #8A1E3E;
+background: none;
+text-align: right;
+width: 90%;
+font-family: "JetBrains Mono";
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: 110.606%; /* 26.546px */
+display: flex;
+justify-self: center;
+border-radius: 69px;
+border: 2px solid #8A1E3E;
+}
+
+.carddd button:hover {
+  background-color:  #8A1E3E;
+  color: #fffaf5;
+}
+
+.paddingbott{
+    width: 100%;
+    padding-bottom: 20px;
+}

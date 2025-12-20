@@ -6,14 +6,16 @@ import MainButton from "../common/MainButton";
 import Sbutton from "../common/ButtonSecondary";
 import Tape from "../common/Tape.jsx";
 import Header from "../Homepage sections/Header.jsx";
-import About from "../Homepage sections/About.jsx";
+import About from "../Homepage sections/Aboutt.jsx";
+
 import Work from "../Homepage sections/Work.jsx";
 import Footer from "../components/Footer.jsx";
 import Pinboard from "../Homepage sections/Pinboard.jsx";
 export default function Home() {
   return (
     <div className="homeee">
-     <div className="adi"> <Header /></div>
+    
+     <div className="adi"> <Header /></div> 
       <Tape />
       <About />
        <Title title="Interfaces I’ve Designed" 
